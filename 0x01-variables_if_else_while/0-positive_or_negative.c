@@ -12,7 +12,7 @@ int main(void)
 	/* your code goes there */
 	char* a = "the number is positive";
 	if (n>0){
-		return (a);
+		return (char(a));
 	}
 	else {
 		if(n==0)
