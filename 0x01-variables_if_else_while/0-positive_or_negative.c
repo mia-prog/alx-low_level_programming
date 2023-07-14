@@ -10,7 +10,7 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	char a = "the number is positive";
+	char* a = "the number is positive";
 	if (n>0){
 		return (a);
 	}
