@@ -22,5 +22,5 @@ int main(void)
 		else 
 			printf("The number is negative");
 	}
-	return 0
+	return 0;
 }
