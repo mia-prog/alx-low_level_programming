@@ -17,7 +17,7 @@ int main(void)
 	else {
 		if(n==0)
 		{
-                   return ("The number is zero");
+                   return (char("This number is zero"));
 		}
 		else 
 			return ("The number is negative");
