@@ -10,17 +10,16 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	char *a = "the number is positive";
 	if (n>0){
-		return (char()a);
+		printf("The number is positive");
 	}
 	else {
 		if(n==0)
 		{
-                   return (char()"This number is zero");
+                   printf("The number is zero");
 		}
 		else 
-			return ("The number is negative");
+			printf("The number is negative");
 	}
-	
+	return 0
 }
