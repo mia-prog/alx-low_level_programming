@@ -14,7 +14,7 @@
 int main(void)
 {
 
-	char n;
+	nt n;
 
         for ( n = '0' ; n <= '9' ; n++)
         {
