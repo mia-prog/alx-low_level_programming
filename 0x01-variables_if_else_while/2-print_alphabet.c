@@ -7,9 +7,7 @@ int main(void)
 
     for (alphabet = 'a'; alphabet <= 'z' ; alphabet++)
     {
-        // print the value of the variable 
-        putchar(alphabet"\n");
-
+        putchar(alphabet);
     }
 
     return (0);
