@@ -11,11 +11,11 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
-        char alphabet = 'a';
+        char alphabet;
 
         for (alphabet = 'a'; alphabet <= 'z' ; alphabet++)
 	{
-		while(alphabet != 'q' && alphabet != 'e')
+		if(alphabet != 'q' && alphabet != 'e')
 		{
 			putchar(alphabet);
 		}
