@@ -11,7 +11,7 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
-        char alphabet;
+        char alphabet = 'a';
 
         while(alphabet != 'q') && (alphabet != 'e')
         {
