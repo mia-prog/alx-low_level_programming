@@ -17,5 +17,5 @@ int _islower(int c)
 		if (alph == c)
 			lower = 1;
 	}
-	return(lower);
+	return (lower);
 }
