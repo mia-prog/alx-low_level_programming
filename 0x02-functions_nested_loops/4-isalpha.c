@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- *isalpha chack main 
+ *_isalpha - Check Main
  *@c: an input character
  *Description: uses _puthchar to print
- *Return: 1 if a letter 0 otherwise 
+ *Return: 1 if a letter 0 otherwise
  */
 int _isalpha(int c)
 {
@@ -13,7 +13,7 @@ int _isalpha(int c)
 
 	for (low = 'a'; low <= 'z'; low++)
 	{
-		for (up = 'a'; up <= 'z'; up++)
+		for (up = 'A'; up <= 'Z'; up++)
 		{
 			if (low == c || up == c)
 				isletter = 1;
