@@ -7,10 +7,10 @@
 
 void print_alphabet(void)
 {
-	char *alph;
+	char alph;
 	for (alph == 'a', alph < 'z', alph++)
 	{
-		_putchar('alph');
+		_putchar(alph);
 	}
 	return (0);
 }
