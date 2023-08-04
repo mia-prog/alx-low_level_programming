@@ -1,0 +1,4 @@
+#!/bin/bash
+#include "main.h"
+gcc -c _putchar.c _islower.c _isalpha.c _abs.c _isupper.c _isdigit.c
+ar rc libmy.a _putchar.o _islower.o _isalpha.o _abs.o _isupper.o _isdigit.o
