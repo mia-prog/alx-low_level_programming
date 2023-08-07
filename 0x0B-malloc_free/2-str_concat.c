@@ -1,45 +1,43 @@
+#include "main.h"
 #include <stdlib.h>
-#include <string.h>
 
 /**
- * str_concat - Concatenates two strings.
- * @s1: The first string.
- * @s2: The second string.
+ * str_concat - concatenates two strings.
+ * @s1: first string.
+ * @s2: second string.
  *
- * Return: A pointer to the concatenated string, or NULL on failure.
+ * Return: pointer of an array of chars
  */
 char *str_concat(char *s1, char *s2)
 {
-    if (s1 == NULL)
-        s1 = "";
-    if (s2 == NULL)
-        s2 = "";
+	char *strout;
+	unsigned int i, j, k, limit;
 
-    int length1 = strlen(s1);
-    int length2 = strlen(s2);
-    int total_length = length1 + length2;
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 
-    char *s = malloc((total_length + 1) * sizeof(char));
+	for (i = 0; s1[i] != '\0'; i++)
+		;
 
-    if (s == NULL)
-        return NULL;
+	for (j = 0; s2[j] != '\0'; j++)
+		;
 
-    int i, j;
+	strout = malloc(sizeof(char) * (i + j + 1));
 
-    /* Copy the content of s1 to the new memory */
-    for (i = 0; i < length1; i++)
-    {
-        s[i] = s1[i];
-    }
+	if (strout == NULL)
+	{
+		free(strout);
+		return (NULL);
+	}
 
-    /* Copy the content of s2 to the new memory */
-    for (j = 0; j < length2; j++)
-    {
-        s[i + j] = s2[j];
-    }
+	for (k = 0; k < i; k++)
+		strout[k] = s1[k];
 
-    /* Null-terminate the concatenated string */
-    s[total_length] = '\0';
+	limit = j;
+	for (j = 0; j <= limit; k++, j++)
+		strout[k] = s2[j];
 
-    return s;
+	return (strout);
 }
