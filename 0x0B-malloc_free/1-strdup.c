@@ -6,7 +6,7 @@
  * _strdup - Duplicates a string.
  * @str: The string to be duplicated.
  *
- * Return: A pointer to the newly allocated space in memory, or NULL if failure.
+ * Return: A pointer to c, or NULL if failure.
  */
 char *_strdup(char *str)
 {
