@@ -20,14 +20,16 @@ char *str_concat(char *s1, char *s2)
 
 	length1 = strlen(s1);
 	length2 = strlen(s2);
-
 	length = length1 + length2;
 
 	s = malloc((length + 1) * sizeof(char));
 	s = strcat(s1, s2);
 
 	if (s == NULL)
+	{
+		free(s);
 		return (NULL);
-	else 
+	}
+	else
 		return (s);
 }
