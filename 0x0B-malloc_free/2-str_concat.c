@@ -17,18 +17,19 @@ char *str_concat(char *s1, char *s2)
 	int length1 = 0;
 	int length2 = 0;
 	char *s;
+	int i;
 
 	length1 = strlen(s1);
 	length2 = strlen(s2);
 	length = length1 + length2;
 
 	s = malloc((length + 1) * sizeof(char));
-	for (int i = 0; i < length1; i++)
+	for (i = 0; i < length1; i++)
 	{
 		s[i] = s1[i];
 	}
 
-	for (int i = 0; i < length2; i++)
+	for (i = 0; i < length2; i++)
 	{
 		s[length1 + i] = s2[i];
 	}
