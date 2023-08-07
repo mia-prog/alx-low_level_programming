@@ -18,6 +18,7 @@ char *str_concat(char *s1, char *s2)
 	int length2 = 0;
 	char *s;
 	int i;
+	int j;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -34,9 +35,9 @@ char *str_concat(char *s1, char *s2)
 		s[i] = s1[i];
 	}
 
-	for (i = 0; i < length2; i++)
+	for (j = 0; j < length2; i++)
 	{
-		s[length1 + i] = s2[i];
+		s[j + i] = s2[j];
 	}
 
 	s[length1 + length2] = '\0';
