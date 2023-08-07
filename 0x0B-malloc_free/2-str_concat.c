@@ -23,7 +23,17 @@ char *str_concat(char *s1, char *s2)
 	length = length1 + length2;
 
 	s = malloc((length + 1) * sizeof(char));
-	s = strcat(s1, s2);
+	for (int i = 0; i < length1; i++)
+	{
+		s[i] = s1[i];
+	}
+
+	for (int i = 0; i < length2; i++)
+	{
+		s[length1 + i] = s2[i];
+	}
+
+	s[length1 + length2] = '\0';
 
 	if (s == NULL)
 	{
