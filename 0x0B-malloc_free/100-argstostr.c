@@ -18,7 +18,7 @@ char *argstostr(int ac, char **av)
 	unsigned int current_position;
 
 	if (ac == 0 || av == NULL)
-		return NULL;
+		return (NULL);
 
 	for (i = 0; i < ac; i++)
 		length += strlen(av[i]) + 1;
@@ -27,17 +27,19 @@ char *argstostr(int ac, char **av)
 	if (str == NULL)
 	{
 		free(str);
-		return NULL;
+		return (NULL);
 	}
 
 	current_position = 0;
-	for (i = 0; i < ac; i++) 
+	for (i = 0; i < ac; i++)
 	{
 		strcpy(str + current_position, av[i]);
 		current_position += strlen(av[i]);
 		str[current_position] = '\n';
 		current_position++;
 	}
+
+	str[current_position] = '\0';
 
 	return (str);
 }
