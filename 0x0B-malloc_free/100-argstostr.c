@@ -35,11 +35,12 @@ char *argstostr(int ac, char **av)
 	{
 		strcpy(str + current_position, av[i]);
 		current_position += strlen(av[i]);
+		str[current_position] = '\0';
 		str[current_position] = '\n';
 		current_position++;
 	}
 
-	str[current_position] = '\n';
+	str[current_position] = '\0';
 
 	return (str);
 }
