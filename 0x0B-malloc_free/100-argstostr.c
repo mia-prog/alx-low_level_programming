@@ -39,7 +39,7 @@ char *argstostr(int ac, char **av)
 		current_position++;
 	}
 
-	str[current_position - 1] = '\0';
+	str[current_position] = '\0';
 
 	return (str);
 }
