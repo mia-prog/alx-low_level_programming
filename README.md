@@ -1,1 +1,1 @@
-First day of C learning
+this is redme file
