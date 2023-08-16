@@ -4,7 +4,7 @@
 /**
  * print_dog : print d elements
  * @d : struct dog
- * returns : dhkjd
+ * returns : nothing
  */
 
 void print_dog(struct dog *d)
@@ -15,10 +15,14 @@ void print_dog(struct dog *d)
 			printf("Name : nil\n");
 		else
 			printf("Name : %s\n", d->name);
+
+
 		if (!(d->age))
 			printf("Age: (nil)\n");
 		else
 			printf("Age: %f\n", d->age);
+
+
 		if (!(d->owner))
 			printf("Owner: (nil)\n");
 		else
