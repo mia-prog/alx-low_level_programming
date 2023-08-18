@@ -11,6 +11,7 @@
  * and the name of its owner.
  */
 
+typdef struct dog dog_t;
 struct dog
 {
 	char *name;
