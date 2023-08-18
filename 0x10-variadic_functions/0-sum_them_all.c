@@ -6,7 +6,7 @@
  *
  * Return: sum of its parameters.
  */
-void print_numbers(const char *separator, const unsigned int n, ...)
+int sum_them_all(const unsigned int n, ...)
 {
 	va_list valist;
 	unsigned int i;
